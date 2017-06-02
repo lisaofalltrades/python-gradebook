@@ -22,3 +22,10 @@ tony = {
     "quizzes": [0.0, 80.0, 75.0],
     "tests": [95.0, 100.0]
 }
+
+# function to define average of a list
+def average(numbers):
+    total = sum(numbers)
+    total = float(total)
+    result = total / len(numbers)
+    return result
