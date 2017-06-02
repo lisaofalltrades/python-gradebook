@@ -53,3 +53,16 @@ def get_letter_grade(score):
         return "F"
 print "Tony's letter grade is:"
 print get_letter_grade(tony)
+
+# a list of students - i.e. a list of dictionaries
+students = [lisa, cathy, lynn, tony]
+
+# class average function
+def get_class_average(students):
+    results = []
+    for student in students:
+        results.append(get_average(student))
+    return average(results)
+print
+print "The class average is: " 
+print get_class_average(students)
