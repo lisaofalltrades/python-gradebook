@@ -37,3 +37,17 @@ def get_average(student):
     tests = average(student["tests"])
     #calculating grade when each category is weighted
     return .1 * homework + .3 * quizzes + .6 * tests
+
+def get_letter_grade(score):
+    if score >= 90:
+        return "A"
+    if score >= 80:
+        return "B"
+    if score >= 70:
+        return "C"
+    if score >= 60:
+        return "D"
+    else:
+        return "F"
+print "Tony's letter grade is:"
+print get_letter_grade(tony)
