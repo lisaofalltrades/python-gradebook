@@ -1,3 +1,4 @@
+# 4 dictonaries with student grades
 lisa = {
     "name": "Lisa",
     "homework": [90.0, 97.0, 75.0, 92.0],
@@ -38,6 +39,7 @@ def get_average(student):
     #calculating grade when each category is weighted
     return .1 * homework + .3 * quizzes + .6 * tests
 
+#function to calculate letter grade
 def get_letter_grade(score):
     if score >= 90:
         return "A"
