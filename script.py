@@ -29,3 +29,11 @@ def average(numbers):
     total = float(total)
     result = total / len(numbers)
     return result
+
+#function to calculate student grade
+def get_average(student):
+    homework = average(student["homework"])
+    quizzes = average(student["quizzes"])
+    tests = average(student["tests"])
+    #calculating grade when each category is weighted
+    return .1 * homework + .3 * quizzes + .6 * tests
